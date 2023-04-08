@@ -10,6 +10,7 @@
     <h1>Drawing Program</h1>
     <canvas id="myCanvas" width="500" height="500" onclick="spiral(event)"></canvas>
     <script>
+        
         function draw(event){
             const canvas = document.getElementById("myCanvas");
             const ctx = canvas.getContext("2d");
@@ -22,8 +23,7 @@
             ctx.strokeStyle = "#000000";
             ctx.beginPath();
             ctx.arc(posx, posy, 50, 0, Math.PI * 2);
-
-        
+        }
         let angle = 0;
         let radius = 50;
         let x = 250;
